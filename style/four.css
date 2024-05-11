@@ -181,17 +181,24 @@ header {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.61);
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.61);
 }
-
+.text-content {
+  width: 200px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
 .content-shapeK h3 {
-  margin-left: 5px;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
   border-bottom: 4px solid black;
-  width: 161px;
+  width: 100%;
   padding-bottom: 5px;
 }
 
 .content-shapeK p {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,11 +248,10 @@ header {
 }
 
 .content-shapeI h3 {
-  margin-left: 13px;
   margin-top: 0;
   margin-bottom: 10px;
   border-bottom: 4px solid black;
-  width: 147px;
+  width: 100%;
   padding-bottom: 5px;
 }
 
@@ -615,10 +621,17 @@ input[type='file'] {
   }
   .content-shapeK h3,
   .content-shapeI h3 {
-    width: 86%;
+    width: 100%;
     font-size: 14px;
-    justify-content: center;
-    /* border: 1px solid; */
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .content-shapeK p,
+  .content-shapeI p {
+    width: auto;
+    margin-left: 0;
+    font-size: 12px;
   }
 }
 

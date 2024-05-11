@@ -217,6 +217,9 @@ input[type='file'] {
     /* margin-left: 110px; */
     gap: 1px;
   }
+  .content-shape {
+    height: 43%;
+  }
 }
 @media screen and (max-width: 576px) {
   .profile-info h2 {

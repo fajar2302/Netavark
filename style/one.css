@@ -1,0 +1,318 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/5348074.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-y: hidden;
+}
+.option-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 100px;
+  margin-top: -200px;
+}
+
+.help img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.profileSetting img {
+  width: 50px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: large;
+  width: 300px;
+  padding: 20px;
+  background-color: #5cc8f6;
+  border-radius: 35px;
+  box-shadow: 0px 0px 10px 0px #00000020;
+}
+
+.login-card h2 {
+  text-align: center;
+  font-size: 24px;
+}
+.login-card input[type='text'] {
+  font-family: roboto;
+  font-weight: bold;
+  width: 250px;
+  padding-left: 50px !important;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+}
+.login-card input[type='password'] {
+  /* display: flex;
+  justify-content: center; */
+  font-family: roboto;
+  font-weight: bold;
+  width: 250px;
+  padding-left: 50px !important;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+}
+.login-card button[type='submit'] {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: large;
+  width: 40%;
+  padding: 5px;
+  background-color: #fcfcfc;
+  color: #000000;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.login-card button[type='submit'] a {
+  text-decoration: none;
+  text-transform: none;
+  color: #000000;
+}
+/* style untuk registrasi */
+.login-card button[type='create'] {
+  font-family: roboto;
+  font-weight: bold;
+  font-size: large;
+  width: 40%;
+  padding: 5px;
+  background-color: #fcfcfc;
+  color: #000000;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* akhiran */
+
+.regis {
+  font-size: 12px;
+  margin-left: -190px;
+  margin-bottom: 20px;
+  /* text-decoration: none; */
+  color: black;
+}
+
+#avatar {
+  padding-top: 1px;
+  padding-left: 10px;
+  align-items: center;
+  width: 34px;
+  position: absolute;
+}
+#security {
+  display: flex;
+  padding-top: 1px;
+  padding-left: 10px;
+  align-items: center;
+  width: 34px;
+  position: absolute;
+}
+.column {
+  position: relative;
+}
+.security-column {
+  position: relative;
+}
+
+/* modal Help Style */
+/* The ModalProfile (background) */
+.modalHelp {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-ContentHelp {
+  height: fit-content;
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  max-width: 200px;
+  border-radius: 8px;
+}
+.modal-ContentHelp img {
+  width: fit-content;
+  height: 200px;
+}
+
+.content .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .text {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #033044;
+  color: white;
+}
+
+/* Close Button */
+.closeBtn {
+  color: #033044;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  /* background-color: ; */
+  border: 1px solid;
+  padding: 1px 5px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: white;
+  background-color: #033044;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* end modal help style */
+
+/* modal Profile Style */
+/* The ModalProfile (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-ContentProfile {
+  height: fit-content;
+  background-color: #5cc8f6;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  max-width: 200px;
+  border-radius: 8px;
+}
+.modal-ContentProfile img {
+  width: fit-content;
+  height: 200px;
+}
+
+.content .img,
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.content .text {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  color: #000000;
+}
+
+/* Close Button */
+.closeBtnProfile {
+  color: #033044;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  /* background-color: ; */
+  border: 1px solid;
+  padding: 1px 5px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.closeBtnProfile:hover,
+.closeBtnProfile:focus {
+  color: white;
+  background-color: #033044;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* end modal profile style */
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .login-card input[type='text'] {
+    font-size: 20px;
+    width: 80%;
+    padding-left: 70px;
+  }
+  .login-card input[type='password'] {
+    font-size: 20px;
+    width: 80%;
+    padding-left: 70px;
+  }
+  .login-card button[type='submit'] {
+    padding: 10px;
+  }
+  #avatar {
+    padding-top: 5px;
+    padding-left: 10px;
+    align-items: center;
+    width: 36px;
+    position: absolute;
+  }
+  #security {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 10px;
+    align-items: center;
+    width: 36px;
+    position: absolute;
+  }
+  .column {
+    position: relative;
+  }
+  .security-column {
+    position: relative;
+  }
+}

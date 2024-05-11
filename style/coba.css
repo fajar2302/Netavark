@@ -1,0 +1,20 @@
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Menyusun konten dengan jarak yang sama antara konten */
+    align-items: center; /* Menyelaraskan konten secara vertikal */
+    width: 80%; /* Lebar konten */
+    max-width: 800px; /* Lebar maksimum konten */
+    margin: 20px auto; /* Memberikan jarak atas dan bawah */
+  }
+  
+  .content-shape1 {
+    flex: 1; /* Menyesuaikan lebar konten */
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .content-shape2 {
+    flex-shrink: 0; /* Menetapkan agar tidak mengecil saat konten dikecilkan */
+    padding: 20px;
+  }
+  

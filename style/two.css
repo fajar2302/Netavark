@@ -1,0 +1,252 @@
+body {
+  height: 100vh;
+  background-color: black;
+  background-image: url(../img/Picture6.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+}
+
+.profile {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+/* .edit-link {
+  border: 1px solid;
+} */
+.profile-picture {
+  position: relative;
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.profile-info {
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.profile-picture:hover img {
+  filter: brightness(30%);
+}
+
+.profile-picture::after {
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  width: 24px; /* Mengatur lebar ikon */
+  height: 24px; /* Mengatur tinggi ikon */
+  background-image: url(../icon/edit.png);
+  background-size: cover; /* Menggunakan cover agar ikon diatur ke dalam dimensi yang diinginkan */
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-picture:hover::after {
+  opacity: 1;
+}
+
+.profile-info h2 {
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.profile-info p {
+  margin-top: -12px;
+  font-size: 14px;
+}
+
+header {
+  text-align: center;
+}
+
+.navbar {
+  display: inline-block;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navbar ul li a {
+  font-family: roboto;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 27px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* rating */
+.star-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+  margin-top: -40px;
+  gap: 2px;
+  /* width: 200px; */
+}
+
+.star-rating {
+  /* display: flex; */
+  gap: 20px;
+  width: 30px; /* Sesuaikan ukuran dengan gif */
+}
+
+.star-rating img {
+  width: 30px;
+}
+
+.star-rating:hover {
+  /* background-position: 0 -50px; Sesuaikan pergeseran agar bintang terpilih */
+}
+
+/* end rating */
+.content-shape {
+  text-align: justify;
+  background-image: url(../img/BG6.png);
+  padding: 20px;
+  width: 100%;
+  height: 310px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.content-shape h2 {
+  margin-top: 0;
+  border-bottom: 4px solid black;
+  width: 79%;
+  padding-bottom: 10px;
+}
+
+.content-shape p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* The ModalProfile (background) */
+.modalProfile {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-profileContent {
+  height: 15%;
+  background-color: #fefefe;
+  margin: 5% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Could be more or less, depending on screen size */
+  max-width: 350px;
+  border-radius: 8px;
+}
+
+/* Close Button */
+.closeBtn {
+  color: #033044;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  /* background-color: ; */
+  border: 1px solid;
+  padding: 1px 5px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: white;
+  background-color: #033044;
+  text-decoration: none;
+  cursor: pointer;
+}
+form {
+  padding-top: 30px;
+}
+input[type='file'] {
+  padding-bottom: 20px;
+}
+
+/* end modals */
+
+/* responsive  */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+  .profile-picture::after {
+    left: 35px;
+  }
+  .star-component {
+    /* margin-left: 110px; */
+    gap: 1px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .profile-info h2 {
+    font-size: 24px;
+  }
+  .star-component {
+    margin-top: -9%;
+    padding-left: 38px;
+    gap: 1px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .profile-picture {
+    width: 85px;
+    height: 85px;
+    /* height: 100px; */
+    border-radius: 100%;
+    /* overflow: hidden; */
+  }
+  .profile-picture::after {
+    top: 30px;
+  }
+
+  .navbar ul li {
+    display: inline;
+    margin: 0;
+  }
+  .star-component {
+    margin-top: -30px;
+    padding-left: 40px;
+    gap: 1px;
+  }
+}

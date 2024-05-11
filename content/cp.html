@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../style/two.css" />
+    <title>Izuchat</title>
+  </head>
+
+  <body>
+    <div id="profileModal" class="modalProfile">
+      <!-- Modal Content -->
+      <div class="modal-profileContent">
+        <span class="closeBtn" id="closeBtn">&times;</span>
+        <form action="../function/proses.php" method="POST" enctype="multipart/form-data">
+          <label for="fileToUpload">Select a file:</label>
+          <input type="file" name="fileToUpload" id="fileToUpload" /><br />
+          <input type="submit" value="Upload Image" name="submitPicture" />
+          <input type="text" name="id" value="<?= $user = $_SESSION['id']; ?>" style="display: none" />
+        </form>
+      </div>
+    </div>
+    <div class="profile">
+      <a id="OpenEditProfile" class="edit-link">
+        <div class="profile-picture">
+          <img src="../img/awa.jpg" alt="Foto_siswa" />
+        </div>
+      </a>
+      <div class="profile-info">
+        <h2>Siti Nur Raisya Umar</h2>
+        <p>Kelas: 12 Mipa 2</p>
+      </div>
+    </div>
+    <div class="star-component">
+      <div class="star-rating"><img src="../icon/star1.gif" alt="" /></div>
+      <div class="star-rating"><img src="../icon/star1.gif" alt="" /></div>
+      <div class="star-rating"><img src="../icon/star2.gif" alt="" /></div>
+      <div class="star-rating"><img src="../icon/star2.gif" alt="" /></div>
+      <div class="star-rating"><img src="../icon/star2.gif" alt="" /></div>
+    </div>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="cp.html">CP</a></li>
+          <li><a href="materi.html">Materi</a></li>
+          <li><a href="aktivitas.html">Aktivitas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content-shape">
+      <h2>Capaian Pembelajaran</h2>
+      <p>
+        peserta didik memahami konsep lanjutan jaringan komputer dan internet meliputi topologi jaringan yang menghubungkan beberapa komputer, aspek teknis berbagai jaringan komputer, lapisan informasi dalam suatu sistem jaringan komputer
+        (OSI Layer), komponen jaringan komputer, dan mekanisme pertukaran data, konsep cyber security, tata kelola kontrol akses data, serta faktor-faktor dan konfigurasi keamanan jaringan.
+      </p>
+    </div>
+    <script src="../js/profileModal.js"></script>
+  </body>
+</html>

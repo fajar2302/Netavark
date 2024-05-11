@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../style/three.css" />
+    <title>Izuchat</title>
+</head>
+
+<body>
+    <div id="profileModal" class="modalProfile">
+
+        <!-- Modal Content -->
+        <div class="modal-profileContent">
+            <span class="closeBtn" id="closeBtn">&times;</span>
+            <form action="../function/proses.php" method="POST" enctype="multipart/form-data">
+                <label for="fileToUpload">Select a file:</label>
+                <input type="file" name="fileToUpload" id="fileToUpload"><br>
+                <input type="submit" value="Upload Image" name="submitPicture">
+            </form>
+        </div>
+
+    </div>
+    <div class=" profile">
+        <a id="OpenEditProfile" class="edit-link">
+            <div class="profile-picture">
+                <img src="../img/awa.jpg" alt="Foto_siswa" />
+            </div>
+        </a>
+        <div class="profile-info">
+            <h2>Siti Nur Raisya Umar</h2>
+            <p>Kelas: XI Mipa 2</p>
+        </div>
+    </div>
+    <div class="star-component">
+        <div class="star-rating"><img src="../icon/star1.gif" alt=""></div>
+        <div class="star-rating"><img src="../icon/star1.gif" alt=""></div>
+        <div class="star-rating"><img src="../icon/star2.gif" alt=""></div>
+        <div class="star-rating"><img src="../icon/star2.gif" alt=""></div>
+        <div class="star-rating"><img src="../icon/star2.gif" alt=""></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="cp.html">CP</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="aktivitas.html">Aktivitas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal Content -->
+        <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <iframe id="iframeUrl" src="#" frameborder="0"></iframe>
+        </div>
+
+    </div>
+
+    <div class="content-shape">
+        <div class="content-main">
+            <h3>Topologi Jaringan</h3>
+            <p id="scrollable-text">koneksi antar komputer pada jaringan komputer baik dengan media kabel atau tanpa
+                kabel, diatur sedemikian rupa membentuk sebuah konfigurasi jaringan</p>
+            <a href="#" id="openModalBtn1">Pelajari Materi<img src="../img/zoom.gif" alt="" /></a>
+        </div>
+        <div class="content-img1">
+            <img src="../img/topology.gif" alt="" />
+        </div>
+    </div>
+
+    <div class="content-shape">
+        <div class="content-main">
+            <h3>Model Jaringan Komputer</h3>
+            <p id="scrollable-text">Rekayasa Jaringan Komputer seperti halnya konsep engineering pada umumnya,
+                terdekomposisi atas banyak komponen penting yang membentuknya,</p>
+            <a href="#" id="openModalBtn2">Pelajari Materi<img src="../img/zoom.gif" alt="" /></a>
+        </div>
+        <div class="content-img1">
+            <img src="../img/mjk.gif" alt="" />
+        </div>
+    </div>
+
+    <div class="content-shape">
+        <div class="content-main">
+            <h3>Transmisi Data</h3>
+            <p id="scrollable-text">Transmisi data adalah proses penting pada jaringan komputer dan internet. Ketika
+                kita mengirimkan email atau mengakses situs web dan</p>
+            <a href="#" id="openModalBtn3">Pelajari Materi<img src="../img/zoom.gif" alt="" /></a>
+        </div>
+        <div class="content-img1">
+            <img src="../img/transmisi.gif" alt="" />
+        </div>
+    </div>
+    <!-- <div class="content-shape2">
+        <h3>Model Jaringan Komputer</h3>
+        <p> Rekayasa Jaringan Komputer seperti halnya konsep  engineering pada umumnya,
+            terdekomposisi atas banyak  komponen penting yang membentuknya,
+            yaitu: perangkat  lunak, firmware, rekayasa chip, perangkat keras, dan sinyal  listrik untuk komunikasi. </p>
+      </div>
+
+      <div class="content-shape3">
+        <h3>Transmisi Data</h3>
+        <p> Transmisi data adalah proses penting pada jaringan komputer  dan internet.
+            Ketika kita mengirimkan email atau mengakses  situs web dan kita mendapatkan
+            informasi maka terjadi  transmisi data. </p>
+      </div> -->
+    <!-- <div class="container">
+        <div class="card">
+            <div class="card-component">
+                <div class="button">
+
+                </div>
+                <div class="card-body">
+                    <iframe src="https://online.fliphtml5.com/bpaod/kgdv/" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+
+
+    <script>
+    let scrollableTexts = document.querySelectorAll('#scrollable-text');
+
+    scrollableTexts.forEach((scrollableText) => {
+        let isScrolling;
+
+        // Event listener for scroll event
+        scrollableText.addEventListener(
+            'scroll',
+            function() {
+                // Clear our timeout throughout the scroll
+                window.clearTimeout(isScrolling);
+
+                // Make scrollbar visible
+                scrollableText.style.scrollbarWidth = 'thin';
+                scrollableText.style.scrollbarColor = '#888 transparent';
+
+                // Set a timeout to run after scrolling ends
+                isScrolling = setTimeout(function() {
+                    // Make scrollbar invisible
+                    scrollableText.style.scrollbarWidth = 'none';
+                }, 1000);
+            },
+            false
+        );
+    });
+    </script>
+    <script src="../js/profileModal.js"></script>
+    <script src="../js/modals.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/one.css" />
+    <title>Netavark</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <!-- modal help -->
+        <div id="myModalHelp" class="modalHelp">
+          <!-- Modal Content -->
+          <div class="modal-ContentHelp">
+            <span class="closeBtn" id="closeBtnHelp">&times;</span>
+          </div>
+        </div>
+        <!-- end Modal help -->
+        <!-- modal profile -->
+        <div id="myModalProfileMade" class="modal">
+          <!-- Modal Content -->
+          <div class="modal-ContentProfile">
+            <span class="closeBtnProfile" id="closeBtnProfile">&times;</span>
+            <div class="content">
+              <p>Profil</p>
+              <div class="img">
+                <img src="img/awa.jpg" alt="" />
+              </div>
+              <p class="text">Nelly Tegela</p>
+            </div>
+          </div>
+        </div>
+        <!-- end Modal profile -->
+        <div class="option-menu">
+          <div class="help" id="openModalBtnHelp"><img src="icon/helpSet.png" alt="Petunjuk" /></div>
+          <div class="profileSetting" id="openModalBtnProfileMade"><img src="icon/profileSet.png" alt="Profil Pembuat" /></div>
+        </div>
+        <div class="login-card">
+          <h2>SIGN IN</h2>
+          <!-- <form> -->
+          <div class="column">
+            <img id="avatar" src="icon/avatar.gif" alt="" />
+            <input type="text" placeholder="Username" name="user" required />
+          </div>
+          <div class="security-column">
+            <img id="security" src="icon/security.gif" alt="" />
+            <input type="password" placeholder="Password" name="password" required />
+          </div>
+          <a class="regis" href="registrasi.html">Sudah Punya Akun?</a>
+          <button type="submit" name="submit"><a href="content/cp.html">Sign In</a></button>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+    <script src="js/profileMade.js"></script>
+    <script src="js/helpBtn.js"></script>
+  </body>
+</html>

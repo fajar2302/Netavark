@@ -598,6 +598,9 @@ input[type='file'] {
     gap: 1px;
     /* border: 1px solid; */
   }
+  .container {
+    height: 100%;
+  }
   .content-shapeK {
     background: linear-gradient(to right, #92ddfd, #b4d1dd);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.61);
@@ -609,6 +612,13 @@ input[type='file'] {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.61);
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.61);
     -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.61);
+  }
+  .content-shapeK h3,
+  .content-shapeI h3 {
+    width: 86%;
+    font-size: 14px;
+    justify-content: center;
+    /* border: 1px solid; */
   }
 }
 

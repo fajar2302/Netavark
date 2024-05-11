@@ -130,24 +130,26 @@ header {
 /* end rating */
 .content-shape {
   text-align: justify;
-  background-image: url(../img/BG6.png);
+  /* background-image: url(../img/BG11.png); */
+  background-color: #92ddfd;
+  border-radius: 50px;
   padding: 20px;
-  width: 100%;
-  height: 310px;
-  max-width: 300px;
+  width: max-content;
+  max-width: 330px;
+  height: 400px;
   margin: 20px auto;
 }
 
 .content-shape h2 {
   margin-top: 0;
   border-bottom: 4px solid black;
-  width: 79%;
+  width: 100%;
   padding-bottom: 10px;
 }
 
 .content-shape p {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /* The ModalProfile (background) */
@@ -217,8 +219,8 @@ input[type='file'] {
     /* margin-left: 110px; */
     gap: 1px;
   }
-  .content-shape {
-    height: 43%;
+  .profile-info h2 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 576px) {

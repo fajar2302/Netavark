@@ -686,4 +686,7 @@ input[type='file'] {
   .content-shapeI p {
     font-size: 12px;
   }
+  .text-content {
+    margin-right: 0;
+  }
 }
